@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset = "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link href="intro_to_css.css" rel="stylesheet" type="text/css">
+
+  <title>
+    Intro To HTML
+  </title>
+</head>
+<body class="bg-secondary">
+  <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+    <span class="nav-item navbar-brand">
+      <span class="navbar-text" style="color:green;"><b>HELLO!!</b></span>
+    </span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon my-toggler"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white active" href="#">Link 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Link 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Link 3</a>
+        </li>
+        <li class="nav-item dropdown">
+          <div class="dropdown">
+            <button type="button" class="btn btn-otline-info text-secondary dropdown-toggle" data-toggle="dropdown">
+              Some More Links
+            </button>
+            <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-white" href="#">Link 4</a>
+              <a class="dropdown-item text-white" href="#">Link 5</a>
+              <a class="dropdown-item text-white" href="#">Link 6</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card stretched-link btn-outline-dark bg-secondary shadow-lg mb-1 p-1 mt-4">
+          <img class="card-img-top" src="avatar.jpg" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Shubham Jha</h4>
+            <p class="card-text">ECE | 03076802818<br>
+              Guru Tegh Bahadur Institute Of Technology</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div id="demo" class="carousel slide shadow-lg mb-1 p-1 mt-4" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <img src="wallpaper1.jpg" alt="wallpaper1" width="1110" height="358">
+              </div>
+              <div class="carousel-item">
+                <img src="wallpaper2.jpg" alt="wallpaper2" width="1110" height="358">
+              </div>
+              <div class="carousel-item">
+                <img src="wallpaper3.jpg" alt="wallpaper3" width="1110" height="358">
+              </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <form class="form-group">
+            <label for="user"><b>Username:</b></label>
+            <input type="text" class="form-control col-md-4 bg-secondary form-inline shadow-lg p-3" id="user" placeholder="@Username">
+            <br />
+            <label for="note"><b>Note:</b></label>
+            <textarea class="form-control col-md-12 bg-secondary shadow-lg p-3" rows="7" id="note" name="text"></textarea>
+            <button type="submit" class="btn btn-success mt-1 shadow-lg">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div class="jumbotron  bg-secondary mt-1 shadow-lg p-3">
+            <h1>My First Page</h1>
+            <pre>This is my first webpage.<br>Made it using Html-5, CSS-3 and Bootstrap-4<br>It is responsive.<br>Will share more things as soon as I learn them.</pre>
+            <h2>I have learnt:</h2>
+            <div class="form-row">
+              <div class="col">
+                <button type="button" class="btn btn-outline-primary btn-block">Kotlin</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-outline-dark btn-block">Python</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-outline-success btn-block">C++</button>
+              </div>
+            </div>
+            <div class="form-row mt-2">
+              <div class="col">
+                <button type="button" class="btn btn-outline-info btn-block">C</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-outline-warning btn-block">Html</button>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-outline-danger btn-block">CSS</button><br>
+              </div>
+              <div class="col">
+                <button type="button" class="btn btn-outline-dark btn-block">Bootstrap</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  </html>

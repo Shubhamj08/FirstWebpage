@@ -1,0 +1,62 @@
+nav a {
+  position: absolute;
+  top:0;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+nav a::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  top:90%;
+  left: 0;
+  height: 1.5px;
+  background: white;
+  transform: scaleX(0);
+  transition: transform .35s ease;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+
+.dropdown .dropdown-menu a:link{
+  text-align: center;
+}
+
+.dropdown .dropdown-menu a:hover
+{
+  background-color: inherit;
+}
+
+.navbar {
+  min-height: 50px;
+}
+
+.navbar-brand {
+  padding:0;
+  height: 50px;
+  line-height: 30px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+}
+
+.btn{
+  border-radius: 20px;
+}
