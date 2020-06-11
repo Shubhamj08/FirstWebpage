@@ -115,9 +115,9 @@
                 <div class="row">
                   <div class="col">
                     <span class="row">
-                      <button type="button" id="clear" class="btn btn-warning col-4 mr-1 mt-1">C</button>
-                      <button type="button" id="delete" class="btn btn-warning col-4 mr-1 mt-1"><--</button>
-                      <button type="button" id="equal" class="btn btn-danger col mr-1 mt-1"><b>=</b></button>
+                      <button type="button" id="clear" class="btn btn-warning col-4 mr-1 mt-1" onclick="on_clear()">C</button>
+                      <button type="button" id="delete" class="btn btn-warning col-4 mr-1 mt-1" onclick="displayIn('<-')"><--</button>
+                      <button type="button" id="equal" class="btn btn-danger col mr-1 mt-1" onclick="solution()"><b>=</b></button>
                     </span>
                     <span class="row">
                       <button type="button" id="seven" class="btn btn-info col mr-1 mt-1" onclick="displayIn('7')"><b>7</b></button>
@@ -140,7 +140,6 @@
                     <span class="row">
                       <button type="button" id="decimal"  class="btn btn-info col mr-1 mt-1" onclick="displayIn('.')"><b>.</b></button>
                       <button type="button" id="zero"  class="btn btn-info col mr-1 mt-1" onclick="displayIn('0')"><b>0</b></button>
-                      <button type="button" id="integer"  class="btn btn-info col mr-1 mt-1"><b>+-</b></button>
                       <button type="button" id="divide"  class="btn btn-success col mr-1 mt-1" onclick="displayIn('/')"><b>/</b></button>
                     </span>
                   </div>
@@ -149,7 +148,7 @@
                       <br /><br /><br /><br />
                       <p id="equation"></p>
                       <br />
-                      <p id="answer"></p>
+                      <p> = <span id="answer">0</span></p>
                     </div>
                   </div>
                 </div>
