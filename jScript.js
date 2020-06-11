@@ -1,3 +1,16 @@
+
+window.onload = function() {
+  dt = new Date();
+  document.getElementById("dateTime").innerHTML= dt;
+    var value = "";}
+
+function displayIn(ch){
+      value+=1 ;
+      document.getElementById("equation").innerHTML = value;
+    }
+
+
+
 function myFunc(id){
 
   if (id == "kotlin"){
@@ -28,7 +41,3 @@ function myFunc(id){
     window.open("https://getbootstrap.com/", "_blank")
   }
 }
-
-window.onload = function (){
-document.getElementById("dateTime").innerHTML = abcd;
-};
