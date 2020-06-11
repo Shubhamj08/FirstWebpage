@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="jScript.js" type="text/javascript"></script>
   <link href="intro_to_css.css" rel="stylesheet" type="text/css">
 
   <title>
@@ -114,33 +115,34 @@
             <h2>I have learnt:</h2>
             <div class="form-row">
               <div class="col">
-                <button type="button" class="btn btn-outline-primary btn-block">Kotlin</button>
+                <button type="button" id="kotlin" class="btn btn-outline-primary btn-block" onclick="myFunc('kotlin')">Kotlin</button>
               </div>
               <div class="col">
-                <button type="button" class="btn btn-outline-dark btn-block">Python</button>
+                <button type="button" id="python" class="btn btn-outline-dark btn-block" onclick="myFunc('python')">Python</button>
               </div>
               <div class="col">
-                <button type="button" class="btn btn-outline-success btn-block">C++</button>
+                <button type="button" id="C++" class="btn btn-outline-success btn-block" onclick="myFunc('C++')">C++</button>
               </div>
             </div>
             <div class="form-row mt-2">
               <div class="col">
-                <button type="button" class="btn btn-outline-info btn-block">C</button>
+                <button type="button" id="C" class="btn btn-outline-info btn-block" onclick="myFunc('C')">C</button>
               </div>
               <div class="col">
-                <button type="button" class="btn btn-outline-warning btn-block">Html</button>
+                <button type="button" id="html" class="btn btn-outline-warning btn-block" onclick="myFunc('html')">Html</button>
               </div>
               <div class="col">
-                <button type="button" class="btn btn-outline-danger btn-block">CSS</button><br>
+                <button type="button" id="CSS" class="btn btn-outline-danger btn-block" onclick="myFunc('CSS')">CSS</button><br>
               </div>
               <div class="col">
-                <button type="button" class="btn btn-outline-dark btn-block">Bootstrap</button>
+                <button type="button" id="bootstrap" class="btn btn-outline-dark btn-block" onclick="myFunc('bootstrap')">Bootstrap</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
   </body>
 
   </html>
