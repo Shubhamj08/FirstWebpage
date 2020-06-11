@@ -57,11 +57,18 @@ nav a:hover::after {
   }
 }
 
-.btn{
+.round-btn{
   border-radius: 20px;
 }
 
 #dateTime{
   font-style: italic;
   color: cyan;
+}
+
+#equation, #answer{
+  color: #000000;
+  font-size: 20px;
+  font-family: Allan;
+  margin-right: 2px;
 }

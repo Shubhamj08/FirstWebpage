@@ -10,6 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="jScript.js" type="text/javascript"></script>
   <link href="intro_to_css.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
 
   <title>
     Intro To HTML
@@ -110,49 +111,90 @@
                 <script>window.onload = function() {
                   dt = new Date();
                   document.getElementById("dateTime").innerHTML= dt;}</script>
+                </div>
               </div>
-              <br />
-            </div>
-            <label for="note"><b>Note:</b></label>
-            <textarea class="form-control col-md-12 bg-secondary shadow-lg p-3" rows="7" id="note" name="text"></textarea>
-            <button type="submit" class="btn btn-success mt-1 shadow-lg">Submit</button>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <div class="jumbotron  bg-secondary mt-1 shadow-lg p-3">
-            <h1>My First Page</h1>
-            <pre>This is my first webpage.<br>Made it using Html-5, CSS-3 and Bootstrap-4<br>It is responsive.<br>Will share more things as soon as I learn them.</pre>
-            <h2>I have learnt:</h2>
-            <div class="form-row">
-              <div class="col">
-                <button type="button" id="kotlin" class="btn btn-outline-primary btn-block" onclick="myFunc('kotlin')">Kotlin</button>
+              <div class="card btn-outline-dark bg-secondary shadow-lg mt-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <span class="row">
+                        <button type="button" id="clear" class="btn btn-warning col-4 mr-1 mt-1">C</button>
+                        <button type="button" id="delete" class="btn btn-warning col-4 mr-1 mt-1"><--</button>
+                        <button type="button" id="equal" class="btn btn-danger col mr-1 mt-1"><b>=</b></button>
+                      </span>
+                      <span class="row">
+                        <button type="button" id="seven"  class="btn btn-info col mr-1 mt-1"><b>7</b></button>
+                        <button type="button" id="eight"  class="btn btn-info col mr-1 mt-1"><b>8</b></button>
+                        <button type="button" id="nine"  class="btn btn-info col mr-1 mt-1"><b>9</b></button>
+                        <button type="button" id="plus"  class="btn btn-success col mr-1 mt-1"><b>+</b></button>
+                      </span>
+                      <span class="row">
+                        <button type="button" id="four"  class="btn btn-info col mr-1 mt-1"><b>4</b></button>
+                        <button type="button" id="five"  class="btn btn-info col mr-1 mt-1"><b>5</b></button>
+                        <button type="button" id="six"  class="btn btn-info col mr-1 mt-1"><b>6</b></button>
+                        <button type="button" id="minus"  class="btn btn-success col mr-1 mt-1"><b>-</b></button>
+                      </span>
+                      <span class="row">
+                        <button type="button" id="one"  class="btn btn-info col mr-1 mt-1"><b>1</b></button>
+                        <button type="button" id="two"  class="btn btn-info col mr-1 mt-1"><b>2</b></button>
+                        <button type="button" id="three"  class="btn btn-info col mr-1 mt-1"><b>3</b></button>
+                        <button type="button" id="multiply"  class="btn btn-success col mr-1 mt-1"><b>*</b></button>
+                      </span>
+                      <span class="row">
+                        <button type="button" id="decimal"  class="btn btn-info col mr-1 mt-1"><b>.</b></button>
+                        <button type="button" id="zero"  class="btn btn-info col mr-1 mt-1"><b>0</b></button>
+                        <button type="button" id="integer"  class="btn btn-info col mr-1 mt-1"><b>+-</b></button>
+                        <button type="button" id="divide"  class="btn btn-success col mr-1 mt-1"><b>/</b></button>
+                      </span>
+                    </div>
+                    <div class="col">
+                      <div class="mt-2 border border-dark text-right">
+                        <br /><br /><br /><br />
+                        <p id="equation">0123456789</p>
+                        <br />
+                        <p id="answer"><pre></pre></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col">
-                <button type="button" id="python" class="btn btn-outline-dark btn-block" onclick="myFunc('python')">Python</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="jumbotron  bg-secondary mt-1 shadow-lg p-3">
+              <h1>My First Page</h1>
+              <pre>This is my first webpage.<br>Made it using Html-5, CSS-3 and Bootstrap-4<br>It is responsive.<br>Will share more things as soon as I learn them.</pre>
+              <h2>I have learnt:</h2>
+              <div class="form-row">
+                <div class="col">
+                  <button type="button" id="kotlin" class="btn btn-outline-primary btn-block round-btn" onclick="myFunc('kotlin')">Kotlin</button>
+                </div>
+                <div class="col">
+                  <button type="button" id="python" class="btn btn-outline-dark btn-block round-btn" onclick="myFunc('python')">Python</button>
+                </div>
+                <div class="col">
+                  <button type="button" id="C++" class="btn btn-outline-success btn-block round-btn" onclick="myFunc('C++')">C++</button>
+                </div>
               </div>
-              <div class="col">
-                <button type="button" id="C++" class="btn btn-outline-success btn-block" onclick="myFunc('C++')">C++</button>
-              </div>
-            </div>
-            <div class="form-row mt-2">
-              <div class="col">
-                <button type="button" id="C" class="btn btn-outline-info btn-block" onclick="myFunc('C')">C</button>
-              </div>
-              <div class="col">
-                <button type="button" id="html" class="btn btn-outline-warning btn-block" onclick="myFunc('html')">Html</button>
-              </div>
-              <div class="col">
-                <button type="button" id="CSS" class="btn btn-outline-danger btn-block" onclick="myFunc('CSS')">CSS</button><br>
-              </div>
-              <div class="col">
-                <button type="button" id="bootstrap" class="btn btn-outline-dark btn-block" onclick="myFunc('bootstrap')">Bootstrap</button>
+              <div class="form-row mt-2">
+                <div class="col">
+                  <button type="button" id="C" class="btn btn-outline-info btn-block round-btn" onclick="myFunc('C')">C</button>
+                </div>
+                <div class="col">
+                  <button type="button" id="html" class="btn btn-outline-warning btn-block round-btn" onclick="myFunc('html')">Html</button>
+                </div>
+                <div class="col">
+                  <button type="button" id="CSS" class="btn btn-outline-danger btn-block round-btn" onclick="myFunc('CSS')">CSS</button><br>
+                </div>
+                <div class="col">
+                  <button type="button" id="bootstrap" class="btn btn-outline-dark btn-block round-btn" onclick="myFunc('bootstrap')">Bootstrap</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-  </body>
+    </body>
 
-  </html>
+    </html>
