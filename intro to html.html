@@ -101,8 +101,18 @@
         <div class="col-md-6">
           <form class="form-group">
             <label for="user"><b>Username:</b></label>
-            <input type="text" class="form-control col-md-4 bg-secondary form-inline shadow-lg p-3" id="user" placeholder="@Username">
-            <br />
+            <div class="row">
+              <div class="col-md-4">
+                <input type="text" class="form-control bg-secondary form-inline shadow-lg p-3" id="user" placeholder="@Username">
+              </div>
+              <div class="col-md-8">
+                <span class="col-md-8 bg-secondary form-inline shadow-lg p-3"><b>You came at:</b><br /><span id="dateTime"></span></span>
+                <script>window.onload = function() {
+                  dt = new Date();
+                  document.getElementById("dateTime").innerHTML= dt;}</script>
+              </div>
+              <br />
+            </div>
             <label for="note"><b>Note:</b></label>
             <textarea class="form-control col-md-12 bg-secondary shadow-lg p-3" rows="7" id="note" name="text"></textarea>
             <button type="submit" class="btn btn-success mt-1 shadow-lg">Submit</button>

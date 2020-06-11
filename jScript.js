@@ -1,4 +1,3 @@
-
 function myFunc(id){
 
   if (id == "kotlin"){
@@ -29,3 +28,7 @@ function myFunc(id){
     window.open("https://getbootstrap.com/", "_blank")
   }
 }
+
+window.onload = function (){
+document.getElementById("dateTime").innerHTML = abcd;
+};
