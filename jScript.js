@@ -1,6 +1,7 @@
 
 document.getElementById("seeDate").onclick = viewDate ;
 
+setInterval(viewDate, 1000);
 function viewDate() {
   dt = new Date();
   document.getElementById("dateTime").innerHTML= dt;
