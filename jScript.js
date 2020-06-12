@@ -1,8 +1,10 @@
 
-window.onload = function() {
+document.getElementById("seeDate").onclick = viewDate ;
+
+function viewDate() {
   dt = new Date();
   document.getElementById("dateTime").innerHTML= dt;
-};
+}
 
 var value = "";
 var ans = "";
